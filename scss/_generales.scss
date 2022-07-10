@@ -1,0 +1,29 @@
+
+.galeria{
+    background-color: #ccc;
+    display: block;
+    justify-content: space-around;
+}
+
+.logo{
+    display: block;
+    background-color: rgba($color: #fff, $alpha: .0);
+    width: 10rem;
+    height: auto;
+    border-radius: 50%;
+    animation-name: logoEf;
+    animation-iteration-count: infinite;
+    animation-timing-function: inherit;
+    animation-duration:1s;
+    animation-delay: 1s;
+}
+
+.foto{
+    width: 20rem;
+    height: auto;
+    transition: 1s;
+    &:hover{
+        transform: skew(20deg,10deg);
+    }
+}
+

@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.galeria {
+  background-color: #ccc;
+  display: block;
+  justify-content: space-around; }
+
+.logo {
+  display: block;
+  background-color: rgba(255, 255, 255, 0);
+  width: 10rem;
+  height: auto;
+  border-radius: 50%;
+  animation-name: logoEf;
+  animation-iteration-count: infinite;
+  animation-timing-function: inherit;
+  animation-duration: 1s;
+  animation-delay: 1s; }
+
+.foto {
+  width: 20rem;
+  height: auto;
+  transition: 1s; }
+  .foto:hover {
+    transform: skew(20deg, 10deg); }
+
+.titulo {
+  font-size: 5rem;
+  background-color: red;
+  animation-name: textEf;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
+
+@keyframes logoEf {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(10deg); }
+  50% {
+    transform: rotate(0deg); }
+  75% {
+    transform: rotate(-10deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+@keyframes textEf {
+  0% {
+    color: black; }
+  100% {
+    color: rgba(0, 0, 0, 0); } }

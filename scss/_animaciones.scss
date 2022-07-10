@@ -1,0 +1,13 @@
+//ANIMACIONES 
+@keyframes logoEf{
+    0%{transform: rotate(0deg);}
+    25%{transform:rotate(10deg)}
+    50%{transform:rotate(0deg)}
+    75%{transform:rotate(-10deg)}
+    100%{transform:rotate(0deg)}
+}
+
+@keyframes textEf{
+    0%{color: rgba($color: #000000, $alpha: 1.0);}
+    100%{color: rgba($color: #000000, $alpha: .0);}
+}
