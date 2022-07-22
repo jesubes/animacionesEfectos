@@ -4,25 +4,24 @@
 
 .galeria {
   background-color: #ccc;
-  display: block;
+  display: flex;
   justify-content: space-around; }
 
 .logo {
-  display: block;
   background-color: rgba(255, 255, 255, 0);
   width: 10rem;
-  height: auto;
+  height: 10rem;
   border-radius: 50%;
   animation-name: logoEf;
   animation-iteration-count: infinite;
-  animation-timing-function: inherit;
   animation-duration: 1s;
-  animation-delay: 1s; }
+  animation-delay: 3s; }
 
 .foto {
   width: 20rem;
   height: auto;
-  transition: 1s; }
+  transition: 1s;
+  display: block; }
   .foto:hover {
     transform: skew(20deg, 10deg); }
 
@@ -32,6 +31,44 @@
   animation-name: textEf;
   animation-duration: 2s;
   animation-iteration-count: infinite; }
+
+#checkbox {
+  display: none; }
+
+.toggler {
+  display: block;
+  width: 60px;
+  height: 31px;
+  border: 2px solid blue;
+  border-radius: 30px;
+  position: relative;
+  cursor: e-resize; }
+
+.ball, .sun, .moon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.ball {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: blue;
+  border-radius: 50%;
+  left: 1px;
+  z-index: 10;
+  transition: transform .5s ease-in-out; }
+
+.sun {
+  left: 5px;
+  background-color: beige; }
+
+.moon {
+  right: 5px;
+  background-color: darkgrey; }
+
+#checkbox:checked + .ball {
+  transform: translate(29px, -50%); }
 
 @keyframes logoEf {
   0% {
@@ -48,5 +85,7 @@
 @keyframes textEf {
   0% {
     color: black; }
+  50% {
+    color: rgba(0, 0, 0, 0); }
   100% {
-    color: rgba(0, 0, 0, 0); } }
+    color: black; } }

@@ -1,27 +1,28 @@
 
 .galeria{
     background-color: #ccc;
-    display: block;
+    display:flex;
     justify-content: space-around;
 }
 
 .logo{
-    display: block;
     background-color: rgba($color: #fff, $alpha: .0);
     width: 10rem;
-    height: auto;
+    height: 10rem;
     border-radius: 50%;
     animation-name: logoEf;
     animation-iteration-count: infinite;
-    animation-timing-function: inherit;
+    // animation-timing-function: inherit;
     animation-duration:1s;
-    animation-delay: 1s;
+    animation-delay: 3s;
 }
 
 .foto{
     width: 20rem;
     height: auto;
     transition: 1s;
+    display:block;
+    
     &:hover{
         transform: skew(20deg,10deg);
     }
